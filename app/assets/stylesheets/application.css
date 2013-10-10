@@ -12,6 +12,38 @@
  *= require_tree .
  */
 body{
-	padding-top: 40px;
+	padding-top: 60px;
 }
 
+.carousel .item {
+    width: 100%; /*slider width*/
+    max-height: 500px; /*slider height*/
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+}
+/*add some makeup*/
+.carousel .carousel-control {
+    background: none;
+    border: none;
+    top: 50%;
+}
+/*full width container*/
+@media (max-width: 900px) {
+    .block {
+        margin-left: -80px;
+        margin-right: -80px;
+    }
+}
+
+.hero-unit.red{
+    background-color: rgba(0, 0, 0, 0);
+    
+}
+
+.behind{
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}

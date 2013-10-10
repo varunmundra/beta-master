@@ -8,7 +8,7 @@
  </script>
 
 <body>
-
+	<section class="block">
 	<div id="myCarousel" class="carousel slide">
   	<ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -17,14 +17,17 @@
   	</ol>
   	<!-- Carousel items -->
   	<div class="carousel-inner">
-    	<div class="active item"><%= link_to image_tag("finance1.jpg", alt: "finance1") %></div>
-    	<div class="item"><%= link_to image_tag("finance2.jpg", alt: "finance2") %></div>
-    	<div class="item"><%= link_to image_tag("finance3.jpg", alt: "finance3") %></div>
+    	<div class="active item"><%= image_tag("finance1.jpg", alt: "finance1") %></div>
+    	<div class="item"><%= image_tag("finance2.jpg", alt: "finance2") %></div>
+    	<div class="item"><%= image_tag("finance3.jpg", alt: "finance3") %></div>
   	</div>
   	<!-- Carousel nav -->
   	<a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
   	<a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 	</div>
+	</section>
+	
+
 
 	<div class="row-fluid">
             <ul class="thumbnails">
@@ -64,25 +67,33 @@
           </div>
 
 
-    <div class="hero-unit span10">
-  		<h1>Track your portfolio</h1>
-  		<p>Tagline</p>
-  		<p>
-    	<a class="btn btn-primary btn-large">
-      	Learn more
-    	</a>
-  		</p>
-	</div>
 
-	<div class="hero-unit span10">
-  		<h1 align="right">Goal Based Investing</h1>
-  		<p align="right">Tagline</p>
-  		<p>
-    	<a class="btn btn-primary btn-large pull-right">
-      	Learn more
-    	</a>
-  		</p>
-	</div>
+
+	<div class="container-fluid">
+     <div class="hero-unit red">
+        <h1>Track your Portfolio</h1>
+        <p>Fork this fiddle to test your Bootstrap stuff.</p>
+        <p>
+            <a class="btn btn-primary btn-large" href="#" target="_blank">
+                Learn more about Bootstrap
+            </a>
+        </p>
+    </div>
+    <div class="behind">Behind The Hero Unit</div>
+	</diV>
+
+	<div class="container-fluid">
+     <div class="hero-unit red pull-right">
+        <h1>Track your Portfolio</h1>
+        <p>Fork this fiddle to test your Bootstrap stuff.</p>
+        <p>
+            <a class="btn btn-primary btn-large pull-right" href="#" target="_blank">
+                Learn more about Bootstrap
+            </a>
+        </p>
+    </div>
+    <div class="behind">Behind The Hero Unit</div>
+	</diV>
 
 
 

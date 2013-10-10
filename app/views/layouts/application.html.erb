@@ -7,10 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div class="navbar navbar-fixed-top navbar-inverse" >
+	<div class="navbar transparent navbar-fixed-top navbar-inverse" >
   		<div class="navbar-inner" >
-  			<div class ="container">
-  				<a href = "/static_pages/home" class = "brand">Rupeevest</a>
+  			<div class ="container-fluid">
+  				<a href = "/static_pages/home" class = "header_logo pull-left"><%= image_tag("logo1.jpg", alt: "logo") %></a>
   				<ul class = "nav">
   					<li><%= link_to "Why Rupeevest", static_pages_whyus_path %><li>
   					<li><%= link_to "About Us", static_pages_aboutus_path %><li>	
@@ -23,13 +23,16 @@
               <li><%= link_to current_user.email, edit_user_registration_path %></li>
               <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>   
             <% else %>
-               <li><%= link_to "Register", new_user_registration_path %></li>  
-               <li><%= link_to "Log In", new_user_session_path %></li> 
+               <a href="/users/sign_up" class="btn btn-primary">Register</a>
+               <a href="/users/sign_in" class="btn btn-primary">Log In</a> 
             <% end %>
           </ul>
   			</div>
   		</div>
   	</div>
+
+
+
 
 	<div class="container">	
     <% if flash[:notice] %>
@@ -44,8 +47,8 @@
         <%= flash[:alert] %>
       </div>
     <%end%>
-
+    </div>
 		<%= yield %>	
-	</div>
+	
 </body>
 </html>
